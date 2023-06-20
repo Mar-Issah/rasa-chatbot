@@ -1,0 +1,101 @@
+version: '3.1'
+
+intents:
+  - greet
+  - goodbye
+  - hi_command
+  - help_command
+  - price_command
+  - news_command
+  - info_command
+  - send_command
+  - tip_command
+  - receive_command
+  - fio_command
+  - balance_command
+  - rules_command
+  - wallet_command
+  - airdrops_command
+  - bounties_command
+  - baskets_command
+  - poll_command
+  - highlight_command
+  - feedback_command
+  - support_command
+
+actions:
+  - action_default_fallback
+
+responses:
+  utter_greet:
+    - text: 'Hey! How are you?'
+
+  utter_did_that_help:
+    - text: 'Did that help you?'
+
+  utter_goodbye:
+    - text: 'Bye'
+
+  utter_iamabot:
+    - text: 'I am a bot, powered by Rasa.'
+
+  utter_hi_command:
+    - text: 'Brings the main menu with all available commands. Can be used in both private and public chats. Use this command by sending /hi to the Alty bot'
+
+  utter_help_command:
+    - text: 'Puts you in touch with our friendly human support agent. Can be used in both private and public chats. Use this command by sending /help to the Alty bot'
+
+  utter_price_command:
+    - text: 'Send /price followed by the token of your choice (eg. /price eth) and you will get the current market price of Ethereum. This works for all ERC20 tokens. You can also include multiple tokens (eg./price btc,eth,tether). Can be used in both private and public chats'
+
+  utter_news_command:
+    - text: 'This brings up the 5 latest crypto articles for specific token or coin /news followed by the token symbole of your choice. E.g /news btc. Can be used in both private and public chats'
+
+  utter_info_command:
+    - text: 'Displays detailed data about a specific token such as all-time high (eg. /info btc). Can be used in both private and public chats'
+
+  utter_send_command:
+    - text: 'This command is the easiest way to send crypto to anyone anywhere. Type /send and follow the instructions from the bot. Can be used in private/direct chats only'
+
+  utter_tip_command:
+    - text: 'This command is used tip crypto to anyone anywhere. Type /tip and follow the instructions from the bot. You can also tip by sending example: /tip bobby@alty 5 algo. Can be used in private/direct chats only'
+
+  utter_receive_command:
+    - text: 'Send this command to get your Alty Wallet addresses. Remember though, if someone is sending you crypto using chat, they just need to use your phone number.Can be used in private/direct chats'
+
+  utter_fio_command:
+    - text: 'This command is used to show your unique FIO handler with the available options. Can be used in both private/direct chats only'
+
+  utter_balance_command:
+    - text: 'Display all the tokens currently held in your Alty Wallet.*see all token balance on app.alty.com. Can be used in private/direct chats only'
+
+  utter_rules_command:
+    - text: 'Send this command to ask the bot to show the rules of the chat group you are currently in. Can be used in both private and public chats'
+
+  utter_wallet_command:
+    - text: 'In a direct chat send /wallet to bring up the wallet related menu (transactional command list). In a public chat it displays link in group for starting a direct conversation with the bot.Can be used in both private and public chats'
+
+  utter_airdrops_command:
+    - text: 'This will bring up a list of all available airdrops in the Alty community.Can be used in both private and public chats'
+
+  utter_bounties_command:
+    - text: 'This will bring up a list of all available airdrops in the Alty community. Can be used in both private and public chats'
+
+  utter_baskets_command:
+    - text: 'This will bring up a list of all available token baskets (indexs) in the Alty community. Can be used in both private and public chats'
+
+  utter_poll_command:
+    - text: 'bring community polls list of commands. *See Poll section below for full command list and poll options **currently works only on  WhatsApp. Can be used in both private and public chats'
+
+  utter_highlight_command:
+    - text: 'Use // + text you wish to record as group highlights. Used in a public group chat'
+
+  utter_feedback_command:
+    - text: 'Send the command /feedback followed your feedback (eg. /feedback  add feature xyz). Your feedback will be snd to the Alty team. Can be used in both private and public chats'
+
+  utter_support_command:
+    - text: 'Provides a chat link to a live person support representative. Can be used in both private and public chats'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

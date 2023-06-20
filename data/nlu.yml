@@ -1,0 +1,154 @@
+version: '3.1'
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: hi_command
+    examples: |
+      - what use the use of the hi command
+      - can you explain the hi command to me?
+      - what happens when I type /hi?
+
+  # - intent: fallback
+  #   examples: |
+  #     - I'm not sure how to help with this. Can you please rephrase your question or provide more information?\n---\nYou can also contact our Support agent or send an email to support@alty.com for assistance.
+
+  - intent: price_command
+    examples: |
+      - what is the price command?
+      - how do I use the price command?
+      - can you explain the price command?
+
+  - intent: help_command
+    examples: |
+      - how does the price command work?
+      - can you explain the price command to me?
+      - what does the price command do?
+      - how can I use the price command?
+
+  - intent: news_command
+    examples: |
+      - what is the news command?
+      - how does the news command work?
+      - can you explain the news command to me?
+      - what does the news command do?
+      - how can I use the news command?
+
+  - intent: info_command
+    examples: |
+      - what is the info command?
+      - how does the info command work?
+      - can you explain the info command to me?
+      - what does the info command do?
+      - how can I use the info command?
+
+  - intent: send_command
+    examples: |
+      - what is the send command?
+      - how do I use the send command?
+      - can you tell me more about the send command?
+
+  - intent: tip_command
+    examples: |
+      - what is the tip command?
+      - how do I use the tip command?
+      - can you provide information about the tip command?
+
+  - intent: receive_command
+    examples: |
+      - what is the receive command?
+      - how do I use the receive command?
+      - can you give me details on the receive command?
+
+  - intent: fio_command
+    examples: |
+      - what is the fio command?
+      - how do I use the fio command?
+      - can you explain the fio command?
+
+  - intent: balance_command
+    examples: |
+      - what is the balance command?
+      - how do I use the balance command?
+      - can you tell me about the balance command?
+
+  - intent: rules_command
+    examples: |
+      - what is the rules command?
+      - how do I use the rules command?
+      - can you provide information on the rules command?
+
+  - intent: wallet_command
+    examples: |
+      - what is the wallet command?
+      - how do I use the wallet command?
+      - can you give me details about the wallet command?
+
+  - intent: airdrops_command
+    examples: |
+      - what is the airdrops command?
+      - how do I use the airdrops command?
+      - can you explain the airdrops command?
+
+  - intent: bounties_command
+    examples: |
+      - what is the bounties command?
+      - how do I use the bounties command?
+      - can you tell me about the bounties command?
+
+  - intent: baskets_command
+    examples: |
+      - what is the baskets command?
+      - how do I use the baskets command?
+      - can you provide information on the baskets command?
+
+  - intent: poll_command
+    examples: |
+      - what is the poll command?
+      - how do I use the poll command?
+      - can you give me details about the poll command?
+
+  - intent: highlight_command
+    examples: |
+      - what is the highlight command?
+      - how do I use the highlight command?
+      - can you explain the highlight command?
+
+  - intent: feedback_command
+    examples: |
+      - what is the feedback command?
+      - how do I use the feedback command?
+      - can you tell me about the feedback command?
+
+  - intent: support_command
+    examples: |
+      - what is the support command?
+      - how do I use the support command?
+      - can you provide information on the support command?

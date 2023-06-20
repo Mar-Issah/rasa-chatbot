@@ -1,0 +1,107 @@
+version: '3.1'
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: hi commands
+    steps:
+      - intent: hi_command
+      - action: utter_hi_command
+
+  - story: help command
+    steps:
+      - intent: help_command
+      - action: utter_help_command
+
+  - story: price command
+    steps:
+      - intent: price_command
+      - action: utter_price_command
+
+  - story: news command
+    steps:
+      - intent: news_command
+      - action: utter_news_command
+
+  - story: info command
+    steps:
+      - intent: info_command
+      - action: utter_info_command
+
+  - story: send command
+    steps:
+      - intent: send_command
+      - action: utter_send_command
+
+  - story: tip command
+    steps:
+      - intent: tip_command
+      - action: utter_tip_command
+
+  - story: receive command
+    steps:
+      - intent: receive_command
+      - action: utter_receive_command
+
+  - story: fio command
+    steps:
+      - intent: fio_command
+      - action: utter_fio_command
+
+  - story: balance command
+    steps:
+      - intent: balance_command
+      - action: utter_balance_command
+
+  - story: rules command
+    steps:
+      - intent: rules_command
+      - action: utter_rules_command
+
+  - story: wallet command
+    steps:
+      - intent: wallet_command
+      - action: utter_wallet_command
+
+  - story: airdrops command
+    steps:
+      - intent: airdrops_command
+      - action: utter_airdrops_command
+
+  - story: bounties command
+    steps:
+      - intent: bounties_command
+      - action: utter_bounties_command
+
+  - story: baskets command
+    steps:
+      - intent: baskets_command
+      - action: utter_baskets_command
+
+  - story: poll command
+    steps:
+      - intent: poll_command
+      - action: utter_poll_command
+
+  - story: highlight command
+    steps:
+      - intent: highlight_command
+      - action: utter_highlight_command
+
+  - story: feedback command
+    steps:
+      - intent: feedback_command
+      - action: utter_feedback_command
+
+  - story: support command
+    steps:
+      - intent: support_command
+      - action: utter_support_command
