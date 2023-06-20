@@ -22,6 +22,8 @@ class ActionDefaultFallback(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        print("Custom Fallback action is being executed.")
+
         dispatcher.utter_message(text="I'm not sure how to help with this. Can you please rephrase your question or provide more information?\n---\nYou can also contact our Support agent or send an email to support@alty.com for assistance.")
 
         return [UserUtteranceReverted()]

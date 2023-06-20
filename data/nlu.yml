@@ -36,10 +36,6 @@ nlu:
       - can you explain the hi command to me?
       - what happens when I type /hi?
 
-  # - intent: fallback
-  #   examples: |
-  #     - I'm not sure how to help with this. Can you please rephrase your question or provide more information?\n---\nYou can also contact our Support agent or send an email to support@alty.com for assistance.
-
   - intent: price_command
     examples: |
       - what is the price command?
@@ -152,3 +148,8 @@ nlu:
       - what is the support command?
       - how do I use the support command?
       - can you provide information on the support command?
+
+  - intent: join_group
+    examples: |
+      - how an I join a group
+      - what are the steps to join a group
