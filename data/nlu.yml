@@ -42,13 +42,6 @@ nlu:
       - how do I use the price command?
       - can you explain the price command?
 
-  - intent: help_command
-    examples: |
-      - how does the price command work?
-      - can you explain the price command to me?
-      - what does the price command do?
-      - how can I use the price command?
-
   - intent: news_command
     examples: |
       - what is the news command?
@@ -153,3 +146,7 @@ nlu:
     examples: |
       - how an I join a group
       - what are the steps to join a group
+
+  - intent: out_of_scope
+    examples: |
+      - Any other question

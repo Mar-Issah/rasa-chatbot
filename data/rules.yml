@@ -5,3 +5,8 @@ rules:
     steps:
       - intent: goodbye
       - action: utter_goodbye
+
+  - rule: Out of scope
+    steps:
+      - intent: nlu_fallback
+      - action: utter_out_of_scope

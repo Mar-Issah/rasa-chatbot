@@ -16,11 +16,6 @@ stories:
       - intent: hi_command
       - action: utter_hi_command
 
-  - story: help command
-    steps:
-      - intent: help_command
-      - action: utter_help_command
-
   - story: price command
     steps:
       - intent: price_command
