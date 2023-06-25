@@ -1,8 +1,6 @@
 version: '3.1'
 
 intents:
-  - greet
-  - goodbye
   - hi_command
   - price_command
   - news_command
@@ -27,12 +25,6 @@ actions:
   - action_default_fallback
 
 responses:
-  utter_greet:
-    - text: 'Hey! How are you?'
-
-  utter_goodbye:
-    - text: 'Bye'
-
   utter_hi_command:
     - text: 'This command brings the main menu with all available Alty commands. Can be used in both private and public chats. Use this command by sending /hi to the Alty bot'
 
