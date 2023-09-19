@@ -1,12 +1,6 @@
 version: '3.1'
 
 intents:
-  - greet
-  - goodbye
-  - hi_command
-  - price_command
-  - news_command
-  - info_command
   - send_command
   - tip_command
   - receive_command
@@ -27,24 +21,6 @@ actions:
   - action_default_fallback
 
 responses:
-  utter_greet:
-    - text: 'Hey! How are you?'
-
-  utter_goodbye:
-    - text: 'Bye'
-
-  utter_hi_command:
-    - text: 'This command brings the main menu with all available Alty commands. Can be used in both private and public chats. Use this command by sending /hi to the Alty bot'
-
-  utter_price_command:
-    - text: 'You can send /price followed by the token of your choice (eg. /price eth) and you will get the current market price of Ethereum. This works for all ERC20 tokens. You can also include multiple tokens (eg./price btc,eth,tether). Can be used in both private and public chats'
-
-  utter_news_command:
-    - text: 'This brings up the 5 latest crypto articles for specific token or coin /news followed by the token symbole of your choice. E.g /news btc. Can be used in both private and public chats'
-
-  utter_info_command:
-    - text: 'Displays detailed data about a specific token such as all-time high (eg. /info btc). Can be used in both private and public chats'
-
   utter_send_command:
     - text: 'This command is the easiest way to send crypto to anyone anywhere. Type /send and follow the instructions from the bot. Can be used in private/direct chats only'
 
@@ -88,10 +64,10 @@ responses:
     - text: 'Provides a chat link to a live person support representative. Can be used in both private and public chats'
 
   utter_join_group:
-    - text: 'Head over to https://alty.com/search/ to find the group of you would like to join. Click the “Apply to Join” button to view the application page. Fill out the form correctly and hit the submit button. A verify “Success” modal should pop up prompting you to verify your phone number. Click the verify your phone number in the <Platform> link to complete your verification process.\nIf the Group has automatic “Automatic user Approval” enabled in the Alty Dashboard then you should be added to the group upon verification. Otherwise, you have to wait for an Admin of the group to accept your application.'
+    - text: 'Head over to https://alty.com/search/ to find the group of you would like to join. Click the “Apply to Join” button to view the application page. Fill out the form correctly and hit the submit button. A verify “Success” modal should pop up prompting you to verify your phone number. Click the verify your phone number in the <Platform> link to complete your verification process.\n\nIf the Group has automatic “Automatic user Approval” enabled in the Alty Dashboard then you should be added to the group upon verification. Otherwise, you have to wait for an Admin of the group to accept your application.'
 
   utter_out_of_scope:
-    - text: 'I am not sure how to help with this. Can you please rephrase your question or provide more information?\n---\nYou can also contact our Support agent or send an email to support@alty.com for assistance.'
+    - text: 'I am not sure how to help with this. Can you please rephrase your question or provide more information?\n\nYou can also contact our Support agent or send an email to support@alty.com for assistance.'
 
 session_config:
   session_expiration_time: 60

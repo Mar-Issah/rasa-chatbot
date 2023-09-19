@@ -1,36 +1,6 @@
 version: '3.1'
 
 stories:
-  - story: happy path
-    steps:
-      - intent: greet
-      - action: utter_greet
-
-  - story: goodbye
-    steps:
-      - intent: goodbye
-      - action: utter_goodbye
-
-  - story: hi commands
-    steps:
-      - intent: hi_command
-      - action: utter_hi_command
-
-  - story: price command
-    steps:
-      - intent: price_command
-      - action: utter_price_command
-
-  - story: news command
-    steps:
-      - intent: news_command
-      - action: utter_news_command
-
-  - story: info command
-    steps:
-      - intent: info_command
-      - action: utter_info_command
-
   - story: send command
     steps:
       - intent: send_command
