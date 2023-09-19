@@ -1,0 +1,159 @@
+version: '3.1'
+
+nlu:
+  - intent: price
+    examples: |
+      - How do I check the price of [token]?
+      - How do I check the price of a token?
+      - What's the proper way to ask for a token price?
+      - Can you guide me on how to request [token] current value?
+      - What should I type to get the price of a token?
+      - Teach me how to ask about [token] price.
+      - What's the right way to inquire about [token] worth?
+      - Help me understand how to find out about [token] value
+      - What is the method to get the price of [token]?
+      - How can I query the price of [token] from the bot?
+      - Please show me how to ask for the cost of [token]
+      - Please show me how to ask for the cost of a token
+      - How do I find out the current price of [token]?
+      - What's the proper way to inquire about the worth of [token]?
+      - Show me how to request the value of [token] from the bot
+      - Can you teach me the right way to ask for [token] price?
+      - Help me learn how to get the price of [token] using the bot
+      - How should I ask about [token] current market value?
+      - What phrase should I use to check the price of [token]?
+      - Guide me through asking the bot for the worth of a token
+      - How do I query the price of a token from the bot?
+      - Please demonstrate how to ask about the value of [token]
+
+  - intent: news
+    examples: |
+      - How do I find the latest news about a token?
+      - What's the right way to ask for recent [token] updates?
+      - Can you guide me on how to request [token] news and events?
+      - What should I type to get the important news on a token?
+      - Teach me how to ask about [token] recent developments.
+      - What's the right way to inquire about [token] news and announcements?
+      - Help me understand how to find out about [token] latest updates.
+      - What is the method to get the news about a token?
+      - How can I know about the recent happenings of a token from the bot?
+      - Please show me how to ask for the latest news of a token
+      - How do I find out the current news on [token]?
+      - What's the proper way to inquire about the latest updates on [token]?
+      - Show me how to request the news of [token] from the bot
+      - Can you teach me the right way to ask for [token] recent announcements?
+      - Help me learn how to get news and events related to [token] using the bot
+      - How should I ask about [token] latest developments and updates?
+      - What phrase should I use to check the news of a token?
+      - Guide me through asking the bot for the updates on [token]
+      - How do I query the recent news of [token] from the bot?
+      - Please demonstrate how to ask about the latest happenings of [token]
+
+  - intent: info
+    examples: |
+      - How do I learn more about a token?
+      - What's the right way to ask for information about a token?
+      - Can you guide me on how to request details about a token?
+      - What should I type to get more information on a token?
+      - Teach me how to ask about [token] background and uses
+      - What's the right way to inquire about [token] technology and purpose?
+      - Help me understand how to find out about [token] features
+      - What is the method to get general information about a token?
+      - How can I know more about a token and its use cases from the bot?
+      - Please show me how to ask for background details of [token]
+      - What's the proper way to inquire about [token]?
+      - Show me how to request information about [token] from the bot
+      - Can you teach me the right way to ask for [token]?
+      - Help me learn how to get insights into [token] using the bot
+      - How should I ask about the fundamentals of [token]?
+      - What phrase should I use to check for information about [token]?
+      - Guide me through asking the bot for details on [token]
+      - How do I query the bot for more information about [token]?
+      - Please demonstrate how to ask about the key attributes of [token]
+
+  - intent: support_agent
+    examples: |
+      - How do I get in touch with Alty support?
+      - What's the right way to ask for Alty's customer service?
+      - Could you guide me on how to request contact information for Alty support?
+      - What should I type to get help from Alty's support team?
+      - Teach me how to inquire about Alty's customer support options.
+      - What's the right way to ask about Alty's assistance and helpline?
+      - Help me understand how to find out about Alty's support avenues.
+      - What is the method to get in touch with Alty's help center?
+      - How can I contact the Alty support team using the bot?
+      - Please show me the steps to reach Alty's customer service.
+      - How do I get answers to general questions about Alty?
+      - What's the proper way to consult with Alty's help desk or support team?
+      - Can you direct me to Alty's support forums or community?
+      - What should I type to know about any guides or tutorials on Alty's services?
+      - Show me how to ask for troubleshooting assistance on Alty's platform.
+      - What's the right way to inquire about Alty's technical support or account help?
+      - Help me understand how to report issues or bugs related to Alty.
+      - What is the best method to request Alty's live chat or phone support?
+      - How can I know more about Alty's available documentation and resources using the bot?
+      - Please guide me in contacting Alty's support for billing and payment-related questions.
+
+  - intent: join_group
+    examples: |
+      - How can I join a group on this platform?
+      - What's the process to apply for a group membership?
+      - Are there any steps I need to follow to become a group member?
+      - Can you help me join a specific group?
+      - What information do I need to provide to apply for a group?
+      - Are there any restrictions or requirements to join a group?
+      - Can I be added to a group automatically, or do I need to apply?
+      - How long does it take for my group membership application to be reviewed?
+      - Is there a way to see the list of groups available on this platform?
+      - How do I know if my application to join a group was successful?
+      - Can I apply to join multiple groups at once?
+      - Will I receive a notification if my application to join a group is approved?
+      - Are there any group member responsibilities I should be aware of before joining?
+      - Is there an option to request an invitation to join a group?
+      - How do I find and filter groups by my interests or preferences?
+      - Can I join a group temporarily and leave whenever I want?
+      - Are some groups invite-only or require an existing member's recommendation to join?
+      - What can I do if my application to join a group is rejected?
+      - Is there a limit on the number of groups I can join or apply for?
+      - How do I contact a group's administrator or moderator for assistance with joining?
+
+  - intent: add_bot_to_group
+    examples: |
+      - Can you tell me how to add this bot to my group?
+      - What are the steps to include the bot in our discussion group?
+      - Can this bot be a part of our group?
+      - Can you help me to add the bot into my group?
+      - I want to add this bot to my group, how can I do that?
+      - Could you provide instructions to add this bot to a group?
+      - Is it possible to add the bot to our group discussions?
+      - How do we get the bot involved in our group?
+      - What should I do to incorporate the bot into my group?
+      - Can your bot join our group and participate in discussions?
+      - Can I add the bot to multiple groups simultaneously?
+      - Can you add the bot to my group or do I have to do it?
+      - How often can this bot interact within my group?
+      - What capabilities will the bot have once it's added to the group?
+      - Can I restrict the bot's permissions once it's added to the group?
+      - Does the bot need special access permissions to join and interact in a group?
+      - Is there a help guide on how to add the bot to the group?
+      - What is the command to include the bot in the group?
+      - Will the bot be able to understand and respond to all types of messages in the group?
+      - Can I invite the bot to a private group?
+
+  - intent: bot_usage
+    examples: |
+      - What are the commands to use the bot in a private group?
+      - How can I ask the bot to perform tasks in a public group?
+      - How can I communicate with the bot?
+      - How can I start a conversation with the bot?
+      - What phrases does the bot understand?
+      - Can I ask the bot direct questions?
+      - Is there any specific language or format I need to follow while communicating with the bot?
+      - Can I use slang or abbreviations while talking to the bot?
+      - Does the bot respond to voice commands or is it text-based communication only?
+      - How do I correct the bot if it makes a mistake or misunderstands something?
+      - How do I chat with the bot?
+
+  - intent: out_of_scope
+    examples: |
+      - Any other question

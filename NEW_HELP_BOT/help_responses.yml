@@ -1,0 +1,45 @@
+version: '3.1'
+
+intents:
+  - price
+  - news
+  - info
+  - support_agent
+  - join_group
+  - add_bot
+  - bot_usage
+
+actions:
+  - action_default_fallback
+
+responses:
+  utter_price:
+    - text: 'To request the price of a token from Alty GPT, you can send a message to the bot in the following format: "Price [token]". For example, if you want to inquire about the price of Bitcoin (BTC), you would send the message "Price btc" to the bot.'
+
+  utter_news:
+    - text: 'To request the news of a token from Alty GPT, you can send a message to the bot in the following format: "News [token]". For example, if you want to inquire about the news of Bitcoin (BTC), you would send the message "News btc" to the bot.'
+
+  utter_info:
+    - text: 'To request information about a token from Alty GPT, you can send a message to the bot using the following format: "Info [token]". For instance, if you wish to inquire about Bitcoin's (BTC) information, you would send the message "Info btc" to the bot.'
+
+  utter_support_agent:
+    - text: 'To contact Alty support agent, kindly click on this for Whatsapp, https://wa.me/12468241181?text=/support, for Telegram https://t.me/alty_support you can also send an email to support@alty.com and an agent will respond to you within 24 hours'
+
+  utter_join_group:
+    - text: 'To apply to join any group on Alty platform, head over to https://alty.com/search/ to find the group of you would like to join. Click the “Apply to Join” button to view the application page. Fill out the form correctly and hit the submit button. A verify “Success” modal should pop up prompting you to verify your phone number. Click the verify your phone number in the <Platform> link to complete your verification process.\n\nIf the Group has automatic “Automatic user Approval” enabled in the Alty Dashboard then you should be added to the group upon verification. Otherwise, you have to wait for an Admin of the group to accept your application.'
+
+  # utter_add_bot:
+  #   - text: 'To add the Alty GPT bot to your group, on Whatsapp, please visit https://wa.me/13025494267 and add the contact to your group and on Telegram search for username @AndyAltybot once successfully found, you can now add it to your group'
+
+  utter_support_agent:
+    - text: 'Provides a chat link to a live person support representative. Can be used in both private and public chats'
+
+  utter_bot_usage:
+    - text: 'To use the Alty GPT bot in search for information about prices, news, or general info on tokens, please send example "Price btc/", "Info btc/", or "News btc/". Otherwise, to ask a general query in a group, please start by typing 'alty'. Keep in mind that while the AI can help with many general questions, there may be instances where it cannot provide specific answers and hence it will respond as such and might make other recommendations.'
+
+  utter_out_of_scope:
+    - text: 'I am not sure how to help with this. Can you please rephrase your question or provide more information?\n\nYou can also contact our Support agent or send an email to support@alty.com for assistance.'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

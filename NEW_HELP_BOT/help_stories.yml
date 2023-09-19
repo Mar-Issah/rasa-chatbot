@@ -1,0 +1,37 @@
+version: '3.1'
+
+stories:
+  - story: token price
+    steps:
+      - intent: price
+      - action: utter_price
+
+  - story: token news
+    steps:
+      - intent: news
+      - action: utter_news
+
+  - story: token information
+    steps:
+      - intent: info
+      - action: utter_info
+
+  - story: support command
+    steps:
+      - intent: support_agent
+      - action: utter_support_agent
+
+  - story: join group
+    steps:
+      - intent: join_group
+      - action: utter_join_group
+
+  # - story: add bot to group
+  #   steps:
+  #     - intent: add_bot
+  #     - action: utter_add_bot
+
+  - story: bot usage
+    steps:
+      - intent: bot_usage
+      - action: utter_bot_usage
