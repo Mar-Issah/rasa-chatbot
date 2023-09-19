@@ -1,34 +1,6 @@
 version: '3.1'
 
 nlu:
-  - intent: hi_command
-    examples: |
-      - what use the use of the hi command
-      - can you explain the hi command to me?
-      - what happens when I type /hi?
-
-  - intent: price_command
-    examples: |
-      - what is the price command?
-      - how do I use the price command?
-      - can you explain the price command?
-
-  - intent: news_command
-    examples: |
-      - what is the news command?
-      - how does the news command work?
-      - can you explain the news command to me?
-      - what does the news command do?
-      - how can I use the news command?
-
-  - intent: info_command
-    examples: |
-      - what is the info command?
-      - how does the info command work?
-      - can you explain the info command to me?
-      - what does the info command do?
-      - how can I use the info command?
-
   - intent: send_command
     examples: |
       - what is the send command?
