@@ -1,16 +1,16 @@
 
-A chatbot using RASA
+# A chatbot using RASA
 
-CREATING NEW RASA PROJECT
+### CREATING NEW RASA PROJECT
 `rasa init`
 
-TRAINING MODEL
+### TRAINING MODEL
 `rasa train`
 
-TEST TRAIN MODEL
+### TEST TRAIN MODEL
 `rasa shell`
 
-HOW TO USE THIS PROJECT
+### HOW TO USE THIS PROJECT
 - clone this repo
 - run rasa shell to start the command-line interface for interactive testing
 
